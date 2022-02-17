@@ -1,0 +1,20 @@
+descriptor_id: STANDARDRB
+descriptor_type: tooling_format
+descriptor_flavors:
+  - ruby
+file_extensions:
+  - ".rb"
+linters:
+  # STANDARDRB
+  - linter_name: standardrb
+    linter_repo: https://github.com/testdouble/standard
+    config_file_name: .standard.yml
+    cli_lint_fix_arg_name: "--fix"
+    cli_help_arg_name: "--help"
+    cli_version_arg_name: "--version"
+    examples:
+      - "standardrb ruby_file.rb"
+      - "standardrb --fix ruby_file.rb"
+    install:
+      gem:
+        - standardrb
