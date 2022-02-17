@@ -1,4 +1,4 @@
-descriptor_id: STANDARDRB
+descriptor_id: RUBY
 descriptor_type: tooling_format
 descriptor_flavors:
   - ruby
@@ -15,6 +15,3 @@ linters:
     examples:
       - "standardrb ruby_file.rb"
       - "standardrb --fix ruby_file.rb"
-    install:
-      gem:
-        - standardrb
