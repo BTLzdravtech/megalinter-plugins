@@ -1,0 +1,17 @@
+descriptor_id: RUBY
+descriptor_type: tooling_format
+descriptor_flavors:
+  - ruby
+file_extensions:
+  - ".html.erb"
+linters:
+  # ERBLINT
+  - linter_name: erblint
+    linter_repo: https://github.com/Shopify/erb-lint
+    config_file_name: .erb-lint.yml
+    cli_lint_fix_arg_name: "--autocorrect"
+    cli_help_arg_name: "--help"
+    cli_version_arg_name: "--version"
+    examples:
+      - "erblint erb_file.html.erb"
+      - "erblint --fix erb_file.html.erb"
